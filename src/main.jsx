@@ -23,6 +23,8 @@ const Main = () => {
   if (window) {
     window.globalState = globalState;
   }
+
+  
   return (
     <React.StrictMode>  
       <Context.Provider value={globalState}>

@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import rigoImageUrl from "../assets/img/rigo-baby.jpg"
 import { useStore } from "../hooks/useStore";
 
-export const Single = props => {
+
+export const Single = (props) => {
 	const { demo } = useStore()
 	const { theId } = useParams()
 
