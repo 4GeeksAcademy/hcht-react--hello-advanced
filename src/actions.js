@@ -2,6 +2,7 @@
 // Remember that only the actions can change the value of the store, 
 // It is the analogous to the "setter" function of the useState.
 
+
 export default ({ getStore, getActions, setStore }) => ({
   exampleFunction: () => { getActions().changeColor(0, 'green'); },
   changeColor: (index, color) => {
@@ -16,7 +17,7 @@ export default ({ getStore, getActions, setStore }) => ({
     console.log(demo)
     setStore({ demo: demo });
   }
-})
+});
 
 
 /* 
