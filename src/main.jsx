@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { createContext } from 'react';
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
 import {  RouterProvider } from "react-router-dom";
-import './index.css'
+import './index.css';
 // This is where all your routes are located
 import { router } from "./Routes.jsx";
 import { useGlobalState } from "./hooks/useGlobalState.jsx";
 
 
-export const Context = createContext(null)
+export const Context = createContext(null);
 
 
 const defaultGlobalState = {
@@ -19,11 +19,13 @@ const defaultGlobalState = {
 
 
 const Main = () => {
-  const globalState = useGlobalState(defaultGlobalState)
+  const globalState = useGlobalState(defaultGlobalState);
+  // TODO: Esto es necesario ?
   if (window) {
     window.globalState = globalState;
-  }
+  };
 
+  // Aquí el useEffect()
   
   return (
     <React.StrictMode>  
@@ -32,7 +34,7 @@ const Main = () => {
       </Context.Provider>
     </React.StrictMode>
   );
-}
+};
 
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Main />)
+ReactDOM.createRoot(document.getElementById('root')).render(<Main />);

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import actions from '../actions';
 
+
 export const useGlobalState = (defaultStoreValue) => {
     const [globalState, setGlobalState] = useState({
         store: defaultStoreValue,

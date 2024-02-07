@@ -1,5 +1,6 @@
 import rigoImageUrl from "../assets/img/rigo-baby.jpg";
 
+
 export const Home = () => {
 
 	return (
@@ -10,4 +11,4 @@ export const Home = () => {
 			</p>
 		</div>
 	);
-}; 
+};
